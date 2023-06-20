@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Builder;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -27,14 +29,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-var students = app.MapGroup("/api/students");
+//var students = app.MapGroup("/api/students");
 
-app.MapGet("/", StudentService.GetAllStudents);
-app.MapGet("/school/{school}", StudentService.GeStudentsBySchool);
-app.MapGet("/{id}", StudentService.GetStudentById);
-app.MapPost("/", StudentService.InsertStudent);
-app.MapPut("/{id}", StudentService.UpdateStudent);
-app.MapDelete("/{id}", StudentService.DeleteStudent);
+//app.MapGet("/", StudentService.GetAllStudents);
+//app.MapGet("/school/{school}", StudentService.GeStudentsBySchool);
+//app.MapGet("/{id}", StudentService.GetStudentById);
+//app.MapPost("/", StudentService.InsertStudent);
+//app.MapPut("/{id}", StudentService.UpdateStudent);
+//app.MapDelete("/{id}", StudentService.DeleteStudent);
+app.MapGet("/api/students", StudentService.GetAllStudents);
+app.MapGet("/api/school/{school}", StudentService.GeStudentsBySchool);
+app.MapGet("/api/students/{id}", StudentService.GetStudentById);
+app.MapPost("/api/students", StudentService.InsertStudent);
+app.MapPut("/api/students/{id}", StudentService.UpdateStudent);
+app.MapDelete("/api/students/{id}", StudentService.DeleteStudent);
+
+
 
 app.Run();
 

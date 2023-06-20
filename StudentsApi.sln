@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsApi", "StudentsApi.csproj", "{C2DF3E04-22D4-484E-86FA-2DD458958E99}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "front", "front\front.esproj", "{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2DF3E04-22D4-484E-86FA-2DD458958E99} = {C2DF3E04-22D4-484E-86FA-2DD458958E99}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DF3E04-22D4-484E-86FA-2DD458958E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DF3E04-22D4-484E-86FA-2DD458958E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DF3E04-22D4-484E-86FA-2DD458958E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DF3E04-22D4-484E-86FA-2DD458958E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8E55CB-6AE9-484C-B8BE-3A2BDF9F7108}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9045274E-C6F5-4CB8-8A6C-AF172907AB04}
+	EndGlobalSection
+EndGlobal
