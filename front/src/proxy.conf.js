@@ -14,7 +14,7 @@ const PROXY_CONFIG = [
     context: [
       "/api",
     ],
-    target: "http://localhost:5116",
+    target: "https://localhost:5116",
     secure: false
   }
 ]
